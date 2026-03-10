@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ELige Nova Vida - Superación y Bienestar Integral</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="img/logo nova vida .png" type="image/png" />
+    <link rel="shortcut icon" href="img/logo nova vida .png" />
+    <link rel="apple-touch-icon" href="img/logo nova vida .png" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header>
+      <div class="header-inner">
+        <div class="header-row">
+          <!-- LOGO — izquierda -->
+          <div class="logo-wrap">
+            <div class="logo-icon">
+              <img src="img/logo nova vida .png" alt="Elige Nova Vida Logo" />
+            </div>
+            <span class="logo-text">Elige Nova Vida</span>
+          </div>
+
+          <!-- NAV — centro (solo PC) -->
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#about">Quienes somos</a>
+            <a href="#treatments">Tratamientos</a>
+            <a href="#facilities">Instalaciones</a>
+            <a href="#team">Equipo</a>
+            <a href="articulos.html">Blog</a>
+            <a href="#contact">Contacto</a>
+          </nav>
+
+          <!-- HAMBURGUESA — extremo derecho (solo móvil) -->
+          <button
+            class="hamburger-btn"
+            id="hamburgerBtn"
+            aria-label="Abrir menú"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <!-- MENÚ DESPLEGABLE MÓVIL — fuera del header-row pero dentro del header -->
+        <nav class="mobile-nav" id="mobileNav">
+          <a href="Index.html">Inicio</a>
+          <a href="#about">Quienes somos</a>
+          <a href="#treatments">Tratamientos</a>
+          <a href="#facilities">Instalaciones</a>
+          <a href="#team">Equipo</a>
+          <a href="articulos.html">Blog</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img alt="Serene nature background" src="img/foto-1 centro nova.jpeg" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1>
+          ELIGE NOVA VIDA UN ESPACIO PARA TRANSFORMARTE, RECONECTAR CONTIGO Y
+          CONSTRUIR UNA VIDA PLENA
+        </h1>
+        <p>
+          Un enfoque integral que combina ciencia, psicología y espiritualidad
+          para tu bienestar y recuperación definitiva.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quiénes Somos Section -->
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-inner">
+            <img alt="Equipo de Elige Nova Vida" src="img/Quienes Somos.jpeg" />
+          </div>
+        </div>
+        <div>
+          <span class="about-label">Quiénes Somos</span>
+          <h2>Ciencia y Humanidad para tu Transformación</h2>
+          <p class="desc">
+            Elige Nova Vida. es un espacio internacional de acompañamiento
+            integral orientado a la superación personal, el bienestar emocional
+            y el desarrollo humano consciente. Acompañamos a personas de
+            diferentes países que desean transformar su vida, reconectar con su
+            propósito y construir un proyecto vital saludable y sostenible.
+            Nuestro enfoque integra ciencia, psicología, espiritualidad
+            terapéutica y hábitos de vida saludables, dentro de un entorno
+            natural, seguro, confidencial y cuidadosamente diseñado para
+            favorecer procesos profundos de transformación persona.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">psychology</span>
+              </div>
+              <div>
+                <h4>Enfoque Psicológico</h4>
+                <p>Terapia cognitiva y emocional personalizada.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">science</span>
+              </div>
+              <div>
+                <h4>Respaldo Científico</h4>
+                <p>Protocolos clínicos validados y supervisión médica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principios Generales Section -->
+    <section class="principles">
+      <div class="principles-grid">
+        <div style="text-align: center; margin-bottom: 4rem">
+          <h2>Nuestros Principios</h2>
+          <p class="sub">
+            Los pilares que sostienen nuestro compromiso con cada persona que
+            confía en nosotros.
+          </p>
+        </div>
+        <div class="principles-grid-cards">
+          <div class="principle-card-grid">
+            <div class="principle-card-grid-inner">
+              <div
+                class="principle-card-grid-icon"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0096d6 60%,
+                    #0ea5e9 100%
+                  );
+                "
+              >
+                <span class="material-symbols-outlined">person</span>
+              </div>
+              <h3>Individualización</h3>
+              <p>
+                Creemos firmemente que cada persona es única e irrepetible. Por
+                ello, diseñamos procesos de acompañamiento totalmente
+                personalizados, teniendo en cuenta la historia de vida, el
+                contexto personal y familiar, las necesidades emocionales, el
+                estado físico y los objetivos vitales de cada individuo. No
+                aplicamos modelos estandarizados: cada camino de superación se
+                construye de manera consciente, respetuosa y ajustada a la
+                realidad de quien lo vive.
+              </p>
+            </div>
+          </div>
+          <div class="principle-card-grid">
+            <div class="principle-card-grid-inner">
+              <div
+                class="principle-card-grid-icon"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0096d6 60%,
+                    #0ea5e9 100%
+                  );
+                "
+              >
+                <span class="material-symbols-outlined">lock</span>
+              </div>
+              <h3>Confidencialidad</h3>
+              <p>
+                La confianza es la base de todo proceso de transformación.
+                Garantizamos una protección absoluta de la información personal,
+                conforme a la legislación vigente en materia de privacidad y
+                protección de datos. Actuamos con total discreción, preservando
+                el anonimato y la intimidad de cada persona, creando un entorno
+                seguro donde es posible expresarse con libertad y sin temor.
+              </p>
+            </div>
+          </div>
+          <div class="principle-card-grid">
+            <div class="principle-card-grid-inner">
+              <div
+                class="principle-card-grid-icon"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                     #0096d6 60%,
+                    #0ea5e9 100%
+                  );
+                "
+              >
+                <span class="material-symbols-outlined">diversity_1</span>
+              </div>
+              <h3>Igualdad</h3>
+              <p>
+                Promovemos un espacio libre de discriminación, donde todas las
+                personas son acogidas con el mismo respeto y dignidad, sin
+                distinción de raza, sexo, edad, orientación, nacionalidad o
+                creencias. Fomentamos un trato humano, cercano y empático,
+                reconociendo el valor intrínseco de cada ser humano y su derecho
+                a encontrar sentido y bienestar en su vida.
+              </p>
+            </div>
+          </div>
+          <div class="principle-card-grid">
+            <div class="principle-card-grid-inner">
+              <div
+                class="principle-card-grid-icon"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0096d6 60%,
+                    #0ea5e9 100%
+                  );
+                "
+              >
+                <span class="material-symbols-outlined">public</span>
+              </div>
+              <h3>Globalidad</h3>
+              <p>
+                Entendemos a la persona como un todo. Nuestro enfoque integral
+                abarca mente, cuerpo, emociones y espiritualidad, reconociendo
+                que el equilibrio auténtico surge de la armonía entre estas
+                dimensiones. Diseñamos rutas de trabajo coherentes y profundas,
+                que permiten una transformación real y sostenida, abordando las
+                causas y no solo los síntomas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tratamientos Grid -->
+    <section class="treatments" id="treatments">
+      <div class="treatments-inner">
+        <div class="treatments-header">
+          <div class="left">
+            <span class="label">Tratamientos</span>
+            <h2>Reconstrucción Personal y Bienestar Integral</h2>
+            <p>
+              En Elige Nova Vida acompañamos procesos de reconstrucción personal
+              y fortalecimiento del proyecto de vida mediante programas
+              estructurados, confidenciales y profundamente transformadores.
+              Cada tratamiento se diseña de forma individual, respetando el
+              ritmo, la historia y las necesidades emocionales de cada persona.
+            </p>
+          </div>
+        </div>
+        <div class="treatments-cards treatments-cards-grid">
+          <!-- Fila 1 -->
+          <div class="treatment-card">
+            <div class="thumb">
+              <img
+                alt="Reconstrucción del Alcohol"
+                src="img/Reconstruccion alcohol.jpeg"
+              />
+            </div>
+            <h3>Reconstrucción del Alcohol</h3>
+            <p>
+              Programa orientado a restablecer el equilibrio personal,
+              fortalecer la conciencia emocional y desarrollar herramientas
+              internas para una vida libre de dependencia.
+            </p>
+          </div>
+          <div class="treatment-card">
+            <div class="thumb">
+              <img
+                alt="Reconstrucción de Cocaína"
+                src="img/Reconstruccion cocaina.jpeg"
+              />
+            </div>
+            <h3>Reconstrucción de Cocaína</h3>
+            <p>
+              Acompañamiento intensivo enfocado en la estabilidad emocional, la
+              disciplina interior y la reconstrucción del proyecto de vida.
+            </p>
+          </div>
+          <div class="treatment-card">
+            <div class="thumb">
+              <img
+                alt="Reconstrucción de Fármacos"
+                src="img/Reconstruccion farmacos.jpeg"
+              />
+            </div>
+            <h3>Reconstrucción de Fármacos</h3>
+            <p>
+              Proceso progresivo con supervisión profesional, orientado a
+              restablecer el equilibrio físico, mental y emocional.
+            </p>
+          </div>
+          <!-- Fila 2 -->
+          <div class="treatment-card">
+            <div class="thumb">
+              <img
+                alt="Reconstrucción del Juego"
+                src="img/Reconstruccion juego.jpeg"
+              />
+            </div>
+            <h3>Reconstrucción del Juego</h3>
+            <p>
+              Intervención integral para recuperar el autocontrol, la
+              estabilidad económica y la confianza personal.
+            </p>
+          </div>
+          <div class="treatment-card">
+            <div class="thumb">
+              <img
+                alt="Reconstrucción de la Conducta Sexual Compulsiva"
+                src="img/Reconstruccion conducta sexual.jpeg"
+              />
+            </div>
+            <h3>Reconstrucción de la Conducta Sexual Compulsiva</h3>
+            <p>
+              Programa especializado en el fortalecimiento emocional, el
+              autocontrol y la construcción de relaciones sanas y conscientes.
+            </p>
+          </div>
+          <div class="treatment-card">
+            <div class="thumb">
+              <img
+                alt="Acompañamiento en Patología Dual"
+                src="img/patologia dual.jpeg"
+              />
+            </div>
+            <h3>Acompañamiento en Patología Dual</h3>
+            <p>
+              Abordaje integral y simultáneo de las dificultades emocionales y
+              conductuales, desde un enfoque humano, ético y profesional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Niveles del Proceso Section -->
+    <section class="process">
+      <div class="process-inner">
+        <div style="text-align: center; margin-bottom: 4rem">
+          <h2>Niveles del Proceso</h2>
+          <p class="sub">
+            Un camino estructurado hacia la libertad definitiva.
+          </p>
+        </div>
+        <div class="process-stages">
+          <div class="process-line"></div>
+          <div class="process-stage">
+            <div class="stage-num">01</div>
+            <h4>Regulación y liberación emocional y física</h4>
+            <p>
+              Estabilización inicial, contención emocional y creación de hábitos
+              saludables.
+            </p>
+          </div>
+          <div class="process-stage">
+            <div class="stage-num">02</div>
+            <h4>Deshabituación de patrones nocivos</h4>
+            <p>
+              Identificación y modificación de conductas y pensamientos que
+              generan dependencia o malestar.
+            </p>
+          </div>
+          <div class="process-stage">
+            <div class="stage-num">03</div>
+            <h4>Reconstrucción y fortalecimiento personal</h4>
+            <p>
+              Desarrollo de autoestima, recursos internos, autonomía y sentido
+              de propósito.
+            </p>
+          </div>
+          <div class="process-stage">
+            <div class="stage-num">04</div>
+            <h4>Integración social y proyecto de vida</h4>
+            <p>
+              Reintegración familiar, social y profesional, con proyección a
+              largo plazo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instalaciones Section -->
+    <section class="facilities" id="facilities">
+      <div class="facilities-inner">
+        <div style="text-align: center; margin-bottom: 4rem">
+          <span class="label">Tu Hogar de Recuperación</span>
+          <h2>Nuestras Instalaciones</h2>
+          <p class="sub">
+            Un entorno natural y tranquilo diseñado para favorecer la
+            introspección y el descanso.
+          </p>
+        </div>
+        <div class="facilities-gallery">
+          <div class="gallery-main">
+            <img
+              alt="Pool and green areas"
+              data-alt="Piscina y zonas verdes"
+              src="img/foto-2 centro nova.jpeg"
+            />
+            <div class="gallery-main-caption">
+              <h4>Áreas Verdes y Piscina</h4>
+            </div>
+          </div>
+          <div class="gallery-side">
+            <div class="gallery-side-item">
+              <img
+                alt="Comfortable room"
+                data-alt="Habitaciones"
+                src="img/habitaciones.jpeg"
+              />
+              <div class="overlay"></div>
+              <div class="caption"><h4>Habitaciones</h4></div>
+            </div>
+            <div class="gallery-side-item">
+              <img
+                alt="Lounge area"
+                data-alt="Espacios de Convivencia"
+                src="img/foto-4 centro nova.jpeg"
+              />
+              <div class="overlay"></div>
+              <div class="caption"><h4>Espacios de Convivencia</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section class="team" id="team">
+      <div class="team-inner">
+        <div class="team-header">
+          <span class="team-label">Nuestro Equipo</span>
+          <h2>Equipo Humano y Objetivos Espirituales</h2>
+        </div>
+        <div class="team-cards-wrap">
+          <div class="team-card equipo-card">
+            <div class="team-card-icon">
+              <span class="material-symbols-outlined">diversity_3</span>
+            </div>
+            <div class="team-card-content">
+              <h3>Equipo</h3>
+
+              <p>
+                Elige Nova Vida cuenta con un equipo humano multidisciplinario,
+                ético y altamente calificado, conformado por profesionales
+                nacionales e internacionales con sólida trayectoria en
+                psicología, acompañamiento emocional, bienestar integral y
+                desarrollo humano.
+              </p>
+              <p>
+                Cada profesional aporta formación académica, experiencia clínica
+                y una profunda vocación de servicio, trabajando desde modelos
+                terapéuticos actualizados, prácticas basadas en la evidencia y
+                metodologías humanistas.
+              </p>
+
+              <div class="team-photo-wrap">
+                <img
+                  src="img/nova vida.jpeg"
+                  alt="Foto del equipo Elige Nova Vida"
+                  class="team-photo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="team-card espirituales-card">
+            <div class="team-card-icon">
+              <span class="material-symbols-outlined">spa</span>
+            </div>
+            <div class="team-card-content">
+              <h3>Objetivos Espirituales</h3>
+              <p>
+                En Elige Nova Vida reconocemos la dimensión espiritual como un
+                pilar esencial del bienestar integral del ser humano. Entendemos
+                la espiritualidad como un espacio íntimo de conexión, sentido y
+                coherencia interior, abordado siempre desde una perspectiva
+                respetuosa, consciente y no dogmática.
+              </p>
+              <p>
+                Nuestros objetivos espirituales se orientan a acompañar procesos
+                profundos de sanación interior, reconciliación personal y
+                construcción de sentido, integrando la dimensión espiritual con
+                el bienestar emocional, psicológico y relacional.
+              </p>
+              <ul class="team-list">
+                <li>
+                  <span class="material-symbols-outlined"
+                    >self_improvement</span
+                  >
+                  Favorecer la reconexión con el ser interior y el propósito de
+                  vida, creando espacios de silencio, introspección y reflexión
+                  consciente que permitan a cada persona reencontrarse consigo
+                  misma y con su sentido vital.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">healing</span>
+                  Acompañar procesos de sanación espiritual profunda, ayudando a
+                  liberar cargas emocionales, heridas existenciales y bloqueos
+                  internos que afectan la paz interior y el equilibrio personal.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">psychology_alt</span>
+                  Fortalecer la conciencia, la presencia y la coherencia
+                  interior, promoviendo prácticas que integren mente, cuerpo,
+                  emociones y espíritu de forma armónica.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"
+                    >volunteer_activism</span
+                  >
+                  Promover valores universales como el amor, la compasión, el
+                  perdón, la gratitud, la responsabilidad personal y el respeto
+                  por la vida, como bases para una convivencia más sana y
+                  consciente.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">diversity_1</span>
+                  Ofrecer acompañamiento espiritual personalizado y respetuoso,
+                  sin imposición de creencias, reconociendo y honrando la
+                  diversidad espiritual, cultural y religiosa de cada persona.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">autorenew</span>
+                  Facilitar procesos de transformación interior sostenibles, que
+                  se traduzcan en cambios reales y duraderos en la forma de
+                  vivir, relacionarse y afrontar la vida.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">shield_person</span>
+                  Crear espacios seguros de contención espiritual, donde las
+                  personas puedan expresar libremente sus búsquedas, dudas,
+                  miedos y experiencias internas con confidencialidad y
+                  confianza.
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"
+                    >sentiment_satisfied</span
+                  >
+                  Contribuir a una vida con mayor sentido, plenitud y coherencia
+                  vital, acompañando la construcción de un proyecto de vida
+                  alineado con los valores, la esencia personal y el bienestar
+                  integral.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+      <div class="blog-inner">
+        <div class="blog-header">
+          <h2>Artículos Recientes</h2>
+          <a href="articulos.html">Ver Blog Completo</a>
+        </div>
+        <div class="blog-cards">
+          <article class="blog-post">
+            <div class="thumb">
+              <img
+                alt="Personal growth article"
+                src="img/Logoterapia centro nova.jpeg"
+              />
+            </div>
+            <span class="tag">Logoterapia</span>
+            <h3>El sentido como motor de vida</h3>
+            <p>
+              Exploramos la logoterapia como el camino para descubrir un
+              propósito que sostenga la existencia, transformando el vacío en
+              una vida con significado...
+            </p>
+          </article>
+          <article class="blog-post">
+            <div class="thumb">
+              <img
+                alt="Emotional wellbeing article"
+                src="img/inteligencia emocional centro nova.jpeg"
+              />
+            </div>
+            <span class="tag">Inteligencia Emocional</span>
+            <h3>Dominar la emoción para liberar la acción</h3>
+            <p>
+              Exploramos la inteligencia emocional para transformar el impulso
+              en consciencia, encontrando el equilibrio necesario para liderar
+              nuestra propia vida...
+            </p>
+          </article>
+          <article class="blog-post">
+            <div class="thumb">
+              <img
+                alt="Family support article"
+                src="img/trastorno personalidad centro nova.jpeg"
+              />
+            </div>
+            <span class="tag">Trastorno Límite de la Personalidad</span>
+            <h3>Equilibrar el caos para encontrar la paz</h3>
+            <p>
+              Exploramos el trastorno límite de la personalidad desde la
+              regulación y la autocompasión, transformando la intensidad
+              emocional en una base sólida para la estabilidad y el
+              autoconocimiento...
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <h2>Escríbenos</h2>
+            <form>
+              <div class="form-row" style="margin-bottom: 1.5rem">
+                <div><label>Nombre</label><input type="text" /></div>
+                <div><label>Email</label><input type="email" /></div>
+              </div>
+              <div style="margin-bottom: 1.5rem">
+                <label>Programa de consulta</label>
+                <select class="program-select">
+                  <option value="">Selecciona un programa</option>
+                  <option>Reconstrucción del Alcohol</option>
+                  <option>Reconstrucción de Cocaína</option>
+                  <option>Reconstrucción de Fármacos</option>
+                  <option>Reconstrucción del Juego</option>
+                  <option>Conducta Sexual Compulsiva</option>
+                  <option>Patología Dual</option>
+                  <option>Información General</option>
+                </select>
+                <label>Mensaje</label>
+                <textarea rows="4"></textarea>
+              </div>
+              <button class="btn-submit" type="button">Enviar Mensaje</button>
+            </form>
+          </div>
+          <div>
+            <h2>Contáctanos</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="material-symbols-outlined">location_on</span>
+                <p>Manizales - Santagueda, Caldas, Colombia</p>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">phone_iphone</span>
+                <p>+57 3018231808</p>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">mail</span>
+                <p>Eligenovavida@gmail.com</p>
+              </div>
+               <div class="contact-item">
+                <span class="material-symbols-outlined">badge</span>
+              <p><strong>NIT:</strong> 900202142-2 &nbsp;</p>
+            </div>
+              <iframe
+                class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3994.731224220182!2d-75.68985362501806!3d5.098344794878626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDUnNTQuMCJOIDc1wrA0MScxNC4yIlc!5e1!3m2!1ses!2sco!4v1771888009173!5m2!1ses!2sco"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <div class="icon">
+              <img src="img/logo nova vida .png" alt="Logo" />
+            </div>
+            <span class="name">ELige Nova Vida</span>
+          </div>
+          <div class="footer-links">
+            <a href="privacidad.html">Aviso Legal</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="privacidad.html">Cookies</a>
+          </div>
+        </div>
+        <p class="footer-copy">
+          © 2026 ELige Nova Vida. Desarrollado por TecLook
+        </p>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a class="whatsapp-fab" id="waFloat" href="#" target="_blank">
+      <svg
+        fill="currentColor"
+        height="32px"
+        viewBox="0 0 256 256"
+        width="32px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- Floating Instagram Button -->
+    <a
+      class="instagram-fab"
+      href="https://www.instagram.com/eligenovavida/"
+      target="_blank"
+    >
+      <svg
+        fill="currentColor"
+        height="32px"
+        viewBox="0 0 256 256"
+        width="32px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+        ></path>
+      </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

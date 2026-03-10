@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - ELige Nova Vida | Artículos de Divulgación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/articulos.css" />
+    <link rel="icon" href="img/logo nova vida .png" type="image/png" />
+    <link rel="shortcut icon" href="img/logo nova vida .png" />
+    <link rel="apple-touch-icon" href="img/logo nova vida .png" />
+   
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="header-row">
+          <div class="logo-wrap">
+            <div class="logo-icon">
+              <img src="img/logo nova vida .png" alt="Centro Nova Vida Logo" />
+            </div>
+            <span class="logo-text">Elige Nova Vida</span>
+          </div>
+          <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="Index.html#about">Quienes somos</a>
+            <a href="Index.html#treatments">Tratamientos</a>
+            <a href="Index.html#facilities">Instalaciones</a>
+            <a href="Index.html#team">Equipo</a>
+            <a href="articulos.html">Blog</a>
+            <a href="Index.html#contact">Contacto</a>
+          </nav>
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+          <a href="Index.html">Inicio</a>
+          <a href="Index.html#about">Quienes somos</a>
+          <a href="Index.html#treatments">Tratamientos</a>
+          <a href="Index.html#facilities">Instalaciones</a>
+          <a href="Index.html#team">Equipo</a>
+          <a href="articulos.html">Blog</a>
+          <a href="Index.html#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="blog-hero reveal">
+      <div class="hero-label">Elige Nova Vida · Blog</div>
+      <h1>Reflexión, orientación<br />y <em>crecimiento consciente</em></h1>
+      <p>
+        10 artículos de divulgación sobre psicología, salud mental, bienestar
+        emocional y espiritualidad terapéutica para acompañar procesos de
+        transformación personal.
+      </p>
+    </div>
+
+    <div class="filtros">
+      <span class="filtro-label">Categorías:</span>
+      <button class="filtro-btn activo" onclick="filtrar('todos', this)">Todos</button>
+      <button class="filtro-btn" onclick="filtrar('psicoterapia', this)">Psicoterapia</button>
+      <button class="filtro-btn" onclick="filtrar('salud-mental', this)">Salud Mental</button>
+      <button class="filtro-btn" onclick="filtrar('bienestar', this)">Bienestar</button>
+      <button class="filtro-btn" onclick="filtrar('desarrollo', this)">Desarrollo Personal</button>
+      <button class="filtro-btn" onclick="filtrar('recuperacion', this)">Recuperación</button>
+      <button class="filtro-btn" onclick="filtrar('espiritualidad', this)">Espiritualidad</button>
+    </div>
+
+    <div class="articulos-main" id="grid">
+      <div class="card featured reveal" data-cat="psicoterapia" onclick="abrirModal(0)">
+        <img src="img/1.jpeg" alt="Imagen del artículo" class="card-img" />
+        <h2>La Logoterapia</h2>
+        <p class="card-sub">Sentido, libertad y responsabilidad en la experiencia humana</p>
+        <p class="card-resumen">
+          Desarrollada por Viktor Frankl —sobreviviente del Holocausto— la logoterapia sostiene que la motivación primaria del ser humano no es el placer ni el poder, sino la búsqueda de sentido. Cuando ese sentido se frustra, emerge el «vacío existencial»: apatía, desesperanza o conductas compulsivas que encubren una crisis de significado.
+        </p>
+        <div class="card-clave">
+          <div class="card-clave-titulo">Concepto central</div>
+          <p>Frankl identificó tres vías para encontrar sentido: valores de creación, de experiencia y de actitud. Incluso en el dolor, el ser humano puede elegir su respuesta.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Aplicación práctica</span>
+          <span class="card-flecha">Leer artículo →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="bienestar" onclick="abrirModal(1)">
+        <img src="img/2.jpeg" alt="Imagen del artículo" class="card-img" />
+        <div class="card-cat">Psicología · Desarrollo Personal</div>
+        <h2>Inteligencia Emocional</h2>
+        <p class="card-sub">Un camino hacia la madurez personal y relacional</p>
+        <p class="card-resumen">Las emociones no son obstáculos para la razón; son señales que contienen información valiosa sobre necesidades, valores y límites. Desarrollar inteligencia emocional comienza por cambiar nuestra actitud hacia ellas.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Impacto comprobado</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="salud-mental" onclick="abrirModal(2)">
+        <img src="img/3.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Salud Mental · Comprensión Clínica</div>
+        <h2>Trastorno Límite de la Personalidad</h2>
+        <p class="card-sub">Comprensión clínica, causas y caminos de recuperación</p>
+        <p class="card-resumen">El TLP se caracteriza por inestabilidad emocional intensa, impulsividad e identidad difusa. Esta hipersensibilidad no es manipulación, sino una experiencia real que desborda los mecanismos internos de regulación.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Mensaje clave</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="salud-mental" onclick="abrirModal(3)">
+        <img src="img/4.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Salud Mental · Psiquiatría</div>
+        <h2>Trastorno Bipolar</h2>
+        <p class="card-sub">Comprensión clínica, tipos y abordaje integral</p>
+        <p class="card-resumen">El trastorno bipolar implica oscilaciones entre episodios de exaltación y depresión profunda. No son simples cambios de humor, sino alteraciones profundas que afectan el pensamiento, la energía y la funcionalidad.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Romper el mito</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="bienestar" onclick="abrirModal(4)">
+        <img src="img/5.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Vínculos · Autonomía Afectiva</div>
+        <h2>Dependencia Emocional</h2>
+        <p class="card-sub">Comprender el apego patológico y recuperar la autonomía afectiva</p>
+        <p class="card-resumen">La dependencia emocional es un patrón persistente de necesidades afectivas que se intentan cubrir de forma desproporcionada a través de otra persona. Miedo al abandono, idealización y necesidad constante de aprobación.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ El camino de recuperación</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="salud-mental" onclick="abrirModal(5)">
+        <img src="img/6.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Salud Mental · Psiquiatría</div>
+        <h2>Esquizofrenia</h2>
+        <p class="card-sub">Evolución del concepto y comprensión clínica actual</p>
+        <p class="card-resumen">La psiquiatría actual adopta un enfoque dimensional más flexible, describiendo síntomas positivos, negativos y cognitivos en lugar de subtipos rígidos. La detección temprana mejora significativamente el pronóstico.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Desmitificar es clave</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="bienestar" onclick="abrirModal(6)">
+        <img src="img/7.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Bienestar · Autorregulación</div>
+        <h2>Técnicas de Relajación</h2>
+        <p class="card-sub">Fundamentos, métodos y beneficios para la salud integral</p>
+        <p class="card-resumen">El estrés crónico activa permanentemente la respuesta de lucha o huida. Las técnicas de relajación interrumpen ese ciclo enviando señales de seguridad al cerebro y activando el sistema nervioso parasimpático.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Recomendación práctica</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="desarrollo" onclick="abrirModal(7)">
+        <img src="img/8.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Desarrollo Personal · Propósito</div>
+        <h2>Cómo Hacer un Proyecto de Vida</h2>
+        <p class="card-sub">Guía integral para construir propósito y dirección</p>
+        <p class="card-resumen">Un proyecto de vida no es una lista de metas aisladas, sino la integración de valores, talentos y responsabilidades en una visión coherente. Sin dirección clara, muchas personas viven reaccionando en lugar de eligiendo.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Clave de sostenibilidad</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="recuperacion" onclick="abrirModal(8)">
+        <img src="img/9.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Recuperación · Prevención de Recaídas</div>
+        <h2>Fases de la Recaída Emocional</h2>
+        <p class="card-sub">Comprender el proceso para prevenir la recaída conductual</p>
+        <p class="card-resumen">La recaída no ocurre de forma repentina. Es un proceso progresivo que comienza mucho antes del consumo. La recaída emocional es la primera y más silenciosa fase, peligrosa precisamente porque no genera alarma.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Responsabilidad emocional</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-cat="espiritualidad" onclick="abrirModal(9)">
+        <img src="img/10.jpeg" alt="imagen del artículo" class="card-img" />
+        <div class="card-cat">Espiritualidad Terapéutica · Recuperación</div>
+        <h2>El Poder Superior</h2>
+        <p class="card-sub">Dimensión espiritual y transformación interior en la recuperación</p>
+        <p class="card-resumen">El Poder Superior no se impone como figura religiosa específica. Puede ser Dios, la fuerza del grupo, el amor o el potencial más elevado del propio ser. Lo esencial es confiar en algo mayor que el ego individual.</p>
+        <div class="card-footer">
+          <span class="card-flecha-label">→ Espiritualidad sin dogmas</span>
+          <span class="card-flecha">Leer →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay" onclick="cerrarModalFondo(event)">
+      <div class="modal" id="modal">
+        <div class="modal-header" id="modalHeader">
+          <!-- Imagen de portada arriba del todo -->
+          <div id="modalImgWrap"></div>
+          <!-- Texto: número, categoría, título, subtítulo -->
+          <div class="modal-header-content">
+            <div class="modal-num" id="modalNum"></div>
+            <div class="modal-cat" id="modalCat"></div>
+            <h2 id="modalTitulo"></h2>
+            <p class="modal-sub" id="modalSub"></p>
+          </div>
+          <div id="modalIconWrap"></div>
+          <button class="modal-close" onclick="cerrarModal()">✕</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <h2>Escríbenos</h2>
+            <form>
+              <div class="form-row" style="margin-bottom: 1.5rem">
+                <div><label>Nombre</label><input type="text" /></div>
+                <div><label>Email</label><input type="email" /></div>
+              </div>
+              <div style="margin-bottom: 1.5rem">
+                <label>Programa de consulta</label>
+                <select class="program-select">
+                  <option value="">Selecciona un programa</option>
+                  <option>Reconstrucción del Alcohol</option>
+                  <option>Reconstrucción de Cocaína</option>
+                  <option>Reconstrucción de Fármacos</option>
+                  <option>Reconstrucción del Juego</option>
+                  <option>Conducta Sexual Compulsiva</option>
+                  <option>Patología Dual</option>
+                  <option>Información General</option>
+                </select>
+                <label>Mensaje</label>
+                <textarea rows="4"></textarea>
+              </div>
+              <button class="btn-submit" type="button">Enviar Mensaje</button>
+            </form>
+          </div>
+          <div>
+            <h2>Contáctanos</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="material-symbols-outlined">location_on</span>
+                <p>Manizales - Santagueda, Caldas, Colombia</p>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">phone_iphone</span>
+                <p>+57 3018231808</p>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">mail</span>
+                <p>Eligenovavida@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">badge</span>
+                <p><strong>NIT:</strong> 900202142-2 &nbsp;</p>
+              </div>
+              <iframe
+                class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3994.731224220182!2d-75.68985362501806!3d5.098344794878626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDUnNTQuMCJOIDc1wrA0MScxNC4yIlc!5e1!3m2!1ses!2sco!4v1771888009173!5m2!1ses!2sco"
+                style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <div class="icon"><img src="img/logo nova vida .png" alt="Logo" /></div>
+            <span class="name">ELige Nova Vida</span>
+          </div>
+          <div class="footer-links">
+            <a href="privacidad.html">Aviso Legal</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="privacidad.html">Cookies</a>
+          </div>
+        </div>
+        <p class="footer-copy">© 2026 ELige Nova Vida. Desarrollado por TecLook</p>
+      </div>
+    </footer>
+
+    <script>
+      const articulos = [
+        {
+          num: "01", cat: "Psicoterapia · Sentido de Vida",
+          titulo: "La Logoterapia",
+          sub: "Sentido, libertad y responsabilidad en la experiencia humana",
+          img: "img/1.jpeg",
+          resumen: "Desarrollada por Viktor Frankl —sobreviviente del Holocausto— la logoterapia sostiene que la motivación primaria del ser humano no es el placer ni el poder, sino la búsqueda de sentido. Cuando ese sentido se frustra, emerge el «vacío existencial»: apatía, desesperanza o conductas compulsivas que encubren una crisis de significado.",
+          resumen2: "Sus técnicas principales incluyen la intención paradójica (enfrentar el miedo con humor para romper la ansiedad anticipatoria), la derreflexión (desplazar la atención hacia el mundo exterior) y el diálogo socrático (preguntas que ayudan al paciente a descubrir su propio significado). Estas herramientas no imponen un sentido prefabricado, sino que facilitan que cada persona lo descubra por sí misma.",
+          claveTitulo: "Concepto central: voluntad de sentido",
+          claveTexto: "Frankl identificó tres vías para encontrar sentido: valores de creación (lo que aportamos), valores de experiencia (lo que recibimos, como el amor o la belleza) y valores de actitud (la manera en que enfrentamos el sufrimiento inevitable). Este tercer camino es el más revolucionario: incluso en el dolor, el ser humano puede elegir su respuesta.",
+          flechaLabel: "Aplicación práctica",
+          flechaTexto: "La logoterapia es hoy referencia en acompañamiento de enfermedades crónicas, duelo, crisis vocacionales y rehabilitación de adicciones. Más que eliminar síntomas, busca que la persona encuentre un «para qué» que sostenga su vida."
+        },
+        {
+          num: "02", cat: "Psicología · Desarrollo Personal",
+          titulo: "Inteligencia Emocional",
+          sub: "Un camino hacia la madurez personal y relacional",
+          img: "img/2.jpeg",
+          resumen: "Las emociones no son obstáculos para la razón; son señales que contienen información valiosa sobre necesidades, valores y límites. Desarrollar inteligencia emocional comienza por cambiar nuestra actitud: en lugar de juzgar las emociones como buenas o malas, aprendemos a leerlas como datos internos que requieren interpretación.",
+          resumen2: "La inteligencia emocional no es un rasgo fijo; es una competencia que se desarrolla durante toda la vida. Desde la infancia, padres y educadores pueden modelar conductas emocionales saludables. En adultos, la práctica de atención plena y la escritura reflexiva ayudan a detectar patrones emocionales recurrentes.",
+          claveTitulo: "Las cinco dimensiones clave",
+          claveTexto: "Autoconciencia: reconocer las propias emociones en el momento en que ocurren. Autorregulación: canalizar emociones adecuadamente sin reprimirlas. Motivación interna: orientar las emociones hacia metas significativas. Empatía: captar la perspectiva emocional del otro. Habilidades sociales: comunicarse con claridad y resolver conflictos de forma constructiva.",
+          flechaLabel: "Impacto comprobado",
+          flechaTexto: "Personas con mayor inteligencia emocional presentan mejor salud mental, relaciones más satisfactorias y mayor rendimiento profesional. No elimina los problemas, pero proporciona herramientas para afrontarlos con equilibrio."
+        },
+        {
+          num: "03", cat: "Salud Mental · Comprensión Clínica",
+          titulo: "Trastorno Límite de la Personalidad",
+          sub: "Comprensión clínica, causas y caminos de recuperación",
+          img: "img/3.jpeg",
+          resumen: "El TLP se caracteriza por inestabilidad emocional intensa, impulsividad, identidad difusa y relaciones interpersonales polarizadas. Las personas que lo padecen experimentan emociones de forma más rápida, más intensa y durante más tiempo que la mayoría. Esta hipersensibilidad no es manipulación, sino una experiencia real que desborda los mecanismos internos de regulación.",
+          resumen2: "El tratamiento más reconocido es la Terapia Dialéctico-Conductual (DBT) de Marsha Linehan, que combina aceptación y cambio, enseñando habilidades concretas de regulación emocional, tolerancia al malestar y efectividad interpersonal. Con acompañamiento sostenido, muchas personas experimentan una disminución significativa de síntomas.",
+          claveTitulo: "Lo que está detrás de los síntomas",
+          claveTexto: "El TLP suele originarse en entornos invalidantes: contextos donde las emociones del niño fueron minimizadas, ridiculizadas o castigadas. Esto impide el aprendizaje de estrategias efectivas de regulación emocional. No existe una única causa; interactúan factores genéticos, neurobiológicos y experiencias tempranas adversas.",
+          flechaLabel: "Mensaje clave",
+          flechaTexto: "El TLP no es una sentencia. Detrás de la impulsividad hay, frecuentemente, una historia de sufrimiento no resuelto. Una mirada compasiva, libre de estigmas, es el primer paso hacia la recuperación."
+        },
+        {
+          num: "04", cat: "Salud Mental · Psiquiatría",
+          titulo: "Trastorno Bipolar",
+          sub: "Comprensión clínica, tipos y abordaje integral",
+          img: "img/4.jpeg",
+          resumen: "El trastorno bipolar implica oscilaciones significativas entre episodios de exaltación (manía o hipomanía) y episodios de depresión profunda. No son simples cambios de humor, sino alteraciones profundas que afectan el pensamiento, la energía, la conducta y la funcionalidad.",
+          resumen2: "El tratamiento combina estabilizadores del ánimo con psicoterapia enfocada en psicoeducación, reconocimiento temprano de síntomas y hábitos estables como regularidad del sueño y abstinencia de sustancias. El diagnóstico temprano mejora significativamente el pronóstico.",
+          claveTitulo: "Los cuatro tipos principales",
+          claveTexto: "Tipo I: al menos un episodio maníaco completo. Tipo II: episodios hipomaníacos y depresivos sin manía plena; frecuentemente subdiagnosticado. Ciclotimia: cambios crónicos de menor intensidad que persisten por al menos dos años. Formas no especificadas: presentaciones que requieren evaluación detallada.",
+          flechaLabel: "Romper el mito",
+          flechaTexto: "La bipolaridad no equivale a inestabilidad peligrosa. Con tratamiento adecuado, muchas personas llevan vidas productivas y satisfactorias. La creatividad, la sensibilidad y el liderazgo son cualidades frecuentes en personas con este diagnóstico bien gestionado."
+        },
+        {
+          num: "05", cat: "Vínculos · Autonomía Afectiva",
+          titulo: "Dependencia Emocional",
+          sub: "Comprender el apego patológico y recuperar la autonomía afectiva",
+          img: "img/5.jpeg",
+          resumen: "La dependencia emocional es un patrón persistente de necesidades afectivas insatisfechas que se intentan cubrir de manera desproporcionada a través de otra persona. Se caracteriza por miedo intenso al abandono, idealización de la pareja, necesidad constante de aprobación y tolerancia a situaciones desequilibradas.",
+          resumen2: "Sus raíces suelen encontrarse en estilos de apego ansioso desarrollados en la infancia. La psicoterapia permite identificar creencias irracionales, reconstruir la autoestima y aprender a sostener la soledad sin vivirla como abandono.",
+          claveTitulo: "Diferencia entre amor y dependencia",
+          claveTexto: "El amor sano implica deseo de compartir, cuidado recíproco y respeto a la individualidad. La dependencia convierte la relación en el centro exclusivo de la vida, desplazando amistades, proyectos e identidad propia. El amor auténtico permite que el otro sea libre; la dependencia busca retenerlo a cualquier costo.",
+          flechaLabel: "El camino de recuperación",
+          flechaTexto: "Superar la dependencia emocional no significa volverse frío o distante, sino aprender a elegir vínculos desde la libertad y no desde la carencia. Retomar intereses propios, establecer límites claros y practicar el autocuidado son pasos concretos hacia la autonomía afectiva."
+        },
+        {
+          num: "06", cat: "Salud Mental · Psiquiatría",
+          titulo: "Esquizofrenia",
+          sub: "Evolución del concepto y comprensión clínica actual",
+          img: "img/6.jpeg",
+          resumen: "La esquizofrenia es un trastorno mental grave que afecta la percepción, el pensamiento, el lenguaje y la afectividad. La psiquiatría actual adopta un enfoque dimensional más flexible que reconoce la variabilidad de síntomas en cada persona.",
+          resumen2: "El tratamiento incluye antipsicóticos para los síntomas positivos e intervención psicosocial: terapia cognitivo-conductual para psicosis, rehabilitación cognitiva, entrenamiento en habilidades sociales y apoyo familiar. La detección temprana mejora significativamente las probabilidades de recuperación funcional.",
+          claveTitulo: "Tres dimensiones sintomáticas clave",
+          claveTexto: "Síntomas positivos: delirios, alucinaciones y pensamiento desorganizado. Síntomas negativos: pérdida de motivación, reducción del habla, anhedonia y aplanamiento afectivo. Síntomas cognitivos: alteraciones de memoria, atención y funciones ejecutivas que pueden persistir aún cuando los síntomas psicóticos están controlados.",
+          flechaLabel: "Desmitificar es clave",
+          flechaTexto: "La esquizofrenia no implica doble personalidad ni predispone a la violencia. El estigma puede ser más incapacitante que los propios síntomas. Con acompañamiento adecuado, es posible mejorar la calidad de vida de forma sostenida."
+        },
+        {
+          num: "07", cat: "Bienestar · Autorregulación",
+          titulo: "Técnicas de Relajación",
+          sub: "Fundamentos, métodos y beneficios para la salud integral",
+          img: "img/7.jpeg",
+          resumen: "El estrés crónico activa de forma permanente la respuesta de lucha o huida. Las técnicas de relajación buscan interrumpir ese ciclo enviando al cerebro señales de seguridad y calma, activando el sistema nervioso parasimpático responsable del descanso y la recuperación.",
+          resumen2: "La práctica constante produce beneficios reales: disminución de la presión arterial, reducción de tensión muscular, mejor sueño, mayor claridad mental y mayor resiliencia emocional. Se utilizan en tratamiento de ansiedad, depresión leve, insomnio, dolor crónico y rehabilitación de adicciones.",
+          claveTitulo: "Cinco técnicas principales",
+          claveTexto: "1. Respiración diafragmática: inhalar lento por la nariz, exhalar pausado. 2. Relajación muscular progresiva (Jacobson): tensar y soltar grupos musculares. 3. Visualización guiada: imaginar escenas tranquilas. 4. Meditación y mindfulness: conciencia del momento presente sin juicio. 5. Entrenamiento autógeno: autosugestión con frases enfocadas en sensaciones corporales.",
+          flechaLabel: "Recomendación práctica",
+          flechaTexto: "Empezar con 5-10 minutos diarios de respiración diafragmática es suficiente para notar cambios. La regularidad es más importante que la duración. Es normal que al inicio la mente divague; la clave es retomar la atención con amabilidad."
+        },
+        {
+          num: "08", cat: "Desarrollo Personal · Propósito",
+          titulo: "Cómo Hacer un Proyecto de Vida",
+          sub: "Guía integral para construir propósito y dirección",
+          img: "img/8.jpeg",
+          resumen: "Un proyecto de vida es una planificación consciente de aquello que una persona desea ser, hacer y alcanzar. No es una lista de metas aisladas, sino la integración de valores, talentos, sueños y responsabilidades en una visión coherente del futuro.",
+          resumen2: "El punto de partida es el autoconocimiento: identificar valores, fortalezas, limitaciones e intereses. Las metas deben ser específicas, medibles, alcanzables, realistas y con plazo definido. Dividirlas en corto, mediano y largo plazo facilita el seguimiento y los ajustes necesarios.",
+          claveTitulo: "Las cinco dimensiones del proyecto integral",
+          claveTexto: "Personal: salud física, mental y espiritual. Académica/profesional: carrera y formación alineados con talentos. Familiar y social: vínculos afectivos y redes de apoyo. Económica: planificación de ingresos, ahorro e inversión. Ética/espiritual: principios que orientan las decisiones y mantienen coherencia de vida.",
+          flechaLabel: "Clave de sostenibilidad",
+          flechaTexto: "El proyecto de vida no es un documento que se archiva; es un proceso dinámico que evoluciona con la experiencia. Revisarlo anualmente, celebrar los avances y ajustar el rumbo sin perder la esencia es la práctica de quienes viven con propósito real."
+        },
+        {
+          num: "09", cat: "Recuperación · Prevención de Recaídas",
+          titulo: "Fases de la Recaída Emocional",
+          sub: "Comprender el proceso para prevenir la recaída conductual",
+          img: "img/9.jpeg",
+          resumen: "La recaída no ocurre de forma repentina. Es un proceso progresivo que comienza mucho antes de que la persona vuelva al consumo. La recaída emocional es la primera y más silenciosa de sus tres fases —emocional, mental y conductual— y paradójicamente ocurre cuando la persona cree que está bien.",
+          resumen2: "La recaída emocional es peligrosa porque es silenciosa: no genera alarma inmediata. Si no se interviene, desemboca en la recaída mental, donde aparecen pensamientos como «una vez no pasa nada». La prevención consiste en expresar emociones regularmente, mantener rutinas de autocuidado y pedir ayuda antes de sentirse desbordado.",
+          claveTitulo: "Las 7 señales progresivas",
+          claveTexto: "1. Negación emocional. 2. Supresión de emociones: irritabilidad, funcionar en automático. 3. Abandono del autocuidado: sueño, alimentación, terapia. 4. Aislamiento emocional y social. 5. Resentimiento y victimismo. 6. Agotamiento crónico: ansiedad persistente, vacío. 7. Búsqueda inconsciente de alivio: pantallas, comida compulsiva, compras impulsivas.",
+          flechaLabel: "Responsabilidad emocional",
+          flechaTexto: "La recaída emocional no es un fracaso moral. Es una señal de que algo interno necesita atención. La sobriedad duradera no se sostiene solo con fuerza de voluntad, sino con conciencia, honestidad emocional y compromiso cotidiano con el propio bienestar."
+        },
+        {
+          num: "10", cat: "Espiritualidad Terapéutica · Recuperación",
+          titulo: "El Poder Superior",
+          sub: "Dimensión espiritual y transformación interior en los procesos de recuperación",
+          img: "img/10.jpeg",
+          resumen: "El concepto de Poder Superior, difundido por el movimiento de Alcohólicos Anónimos desde 1935, no se impone como figura religiosa específica. Se define de forma abierta: puede ser Dios, la fuerza del grupo, el amor, la naturaleza o el propio potencial más elevado. Lo esencial no es su definición teológica, sino la experiencia de confiar en algo mayor que el ego individual.",
+          resumen2: "Desde una perspectiva psicológica, el Poder Superior reduce la ansiedad existencial, activa la esperanza, favorece la responsabilidad consciente e integra sentido al sufrimiento. No elimina la necesidad de acción; la complementa. La espiritualidad auténtica produce frutos visibles: mayor serenidad, capacidad de perdonar y confianza en procesos a largo plazo.",
+          claveTitulo: "¿Por qué el ego solo no es suficiente?",
+          claveTexto: "Muchas recaídas no ocurren por falta de intención, sino por depender exclusivamente del autocontrol. El Poder Superior introduce una variable diferente: la rendición consciente. No es pasividad, sino apertura a recibir ayuda. Cuando el ego deja de absolutizarse, surge un espacio interior donde el cambio real se vuelve posible.",
+          flechaLabel: "Espiritualidad sin dogmas",
+          flechaTexto: "Una persona puede concebir su Poder Superior desde cualquier tradición —o desde ninguna. Lo relevante no es la doctrina, sino la transformación interior que produce. Allí donde el ser humano deja de luchar solo y se abre a algo más grande, comienza un camino auténtico de renovación interior."
+        }
+      ];
+
+      function abrirModal(idx) {
+        const a = articulos[idx];
+        // Imagen en la parte superior del header
+        document.getElementById("modalImgWrap").innerHTML =
+          `<img src="${a.img}" alt="${a.titulo}" class="modal-header-img" />`;
+        document.getElementById("modalNum").textContent = a.num;
+        document.getElementById("modalCat").textContent = a.cat;
+        document.getElementById("modalTitulo").textContent = a.titulo;
+        document.getElementById("modalSub").textContent = a.sub;
+        // Sin íconos SVG
+        document.getElementById("modalIconWrap").innerHTML = "";
+        document.getElementById("modalBody").innerHTML = `
+          <p>${a.resumen}</p>
+          <p>${a.resumen2}</p>
+          <div class="modal-clave">
+            <div class="modal-clave-titulo">${a.claveTitulo}</div>
+            <p>${a.claveTexto}</p>
+          </div>
+          <div class="modal-flecha">
+            <div class="modal-flecha-icon">→</div>
+            <div class="modal-flecha-content">
+              <h4>${a.flechaLabel}</h4>
+              <p>${a.flechaTexto}</p>
+            </div>
+          </div>
+        `;
+        document.getElementById("modalOverlay").classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+
+      function cerrarModal() {
+        document.getElementById("modalOverlay").classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+      function cerrarModalFondo(e) {
+        if (e.target === document.getElementById("modalOverlay")) cerrarModal();
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") cerrarModal();
+      });
+
+      function filtrar(cat, btn) {
+        document.querySelectorAll(".filtro-btn").forEach((b) => b.classList.remove("activo"));
+        btn.classList.add("activo");
+        document.querySelectorAll(".card").forEach((card) => {
+          if (cat === "todos" || card.dataset.cat === cat) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("visible"); });
+        },
+        { threshold: 0.08 }
+      );
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+      const btn = document.getElementById("hamburgerBtn");
+      const menu = document.getElementById("mobileNav");
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        menu.classList.toggle("open");
+      });
+      menu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.classList.remove("open");
+          menu.classList.remove("open");
+        });
+      });
+    </script>
+  </body>
+</html>
